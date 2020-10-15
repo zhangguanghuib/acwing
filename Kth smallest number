@@ -15,7 +15,7 @@ int quick_sort(int l, int r, int k)
 	while (i < j)
 	{
 		while (q[++i] < x);
-			while (q[--j] > x);
+		while (q[--j] > x);
 		if (i < j) swap(q[i], q[j]);
 	}
 
@@ -27,6 +27,7 @@ int quick_sort(int l, int r, int k)
 int main()
 {
 	cin >> n >> k;
+	
 	for (int i = 0; i < n; i++) cin >> q[i];
 
 	cout << quick_sort(0, n - 1, k) << endl;
