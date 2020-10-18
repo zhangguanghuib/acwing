@@ -25,6 +25,7 @@ LL merge_sort(int l, int r)
 		else
 		{
 			tmp[k++] = q[j++];
+			//如果q[i] > q[j], 则i后面到mid的全是逆序对
 			res += mid - i + 1;
 		}
 	}
