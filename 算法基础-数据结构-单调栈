@@ -17,6 +17,7 @@ int main()
 	for (int i = 0; i < n; i++)
 	{
 		cin >> a[i];
+		//如果栈顶元素比当前元素大，则栈顶元素不可能被输出。，所以栈顶元素应该被弹出
 		while (stk.size() != 0 && stk.top() > a[i])
 		{
 			stk.pop();
