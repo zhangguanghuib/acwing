@@ -30,7 +30,6 @@ public class Main {
 		m = Integer.parseInt(split[1]);
 		split = bf.readLine().split(" ");
 
-
 		for (int i = 1; i <= n; i++) {
 			s[i] = Integer.parseInt(split[i - 1]);
 			s[i] += s[i - 1];
