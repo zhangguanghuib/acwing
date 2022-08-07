@@ -4,7 +4,7 @@ link:   https://www.acwing.com/problem/content/893/
 思路：
 
 这道题有一个结论：
-假设有n堆石子， 每堆石子的数量分别a~1, a~2, ....a~n
+假设有n堆石子， 每堆石子的数量分别a<sub>1</sub>, a<sub>2</sub>, ....a<sub>n</sub>
 
     a1^a2^...^a~n = 0     先手必败  
     否则       ！= 0   先手必胜  
