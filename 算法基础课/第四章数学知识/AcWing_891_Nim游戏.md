@@ -7,7 +7,7 @@ link:   https://www.acwing.com/problem/content/893/
 假设有n堆石子， 每堆石子的数量分别a1, a2, ....an
 
 a1^a2^...^an = 0     先手必败  
-            ！= 0   先手必胜  
+              ！= 0   先手必胜  
 
 代码如下:
 ```c
