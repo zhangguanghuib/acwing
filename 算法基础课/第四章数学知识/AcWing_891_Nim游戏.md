@@ -10,7 +10,7 @@ a1^a2^...^an = 0     先手必败
             ！= 0   先手必胜
 
 代码如下:
-""
+'''''
 
 #include <iostream>
 #include <algorithm>
@@ -33,4 +33,4 @@ int main()
 
     return 0;
 }
-""
+''''
