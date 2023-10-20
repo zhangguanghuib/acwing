@@ -1,6 +1,6 @@
 <h1>This problem is leveraging the js library   https://github.com/datastructures-js/priority-queue</h1>
 
-This kind code can AC in the leetcode.cn 
+This kind code can AC in the leetcode.cn https://leetcode.cn/problems/kth-largest-element-in-an-array/submissions/
 ```JS
 /**
  * @param {number[]} nums
