@@ -5,5 +5,7 @@ Step 2:  Create a folder and open this folder by Visual Studio Code<br/>
 Step 3:  Open Terminal and Install typescript<br/>
 <img width="677" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/96819c30-6694-4025-9a0f-f0c04d11461d"><br/>
 Step 4:  Run npm init to create package.json, just press enter to use default value<br/>
-<img width="741" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/eefee76f-78ae-4090-8daf-e80b59507b1c">
+<img width="741" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/eefee76f-78ae-4090-8daf-e80b59507b1c"><br/>
+Step 5: Run tsc --init to tsconfig.json, and make sure sourceMap is true
+<img width="797" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/6f13a5b6-e561-44a8-a72e-21123096a7e2"><br/>
 
