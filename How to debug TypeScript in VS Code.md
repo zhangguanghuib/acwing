@@ -7,5 +7,5 @@ Step 3:  Open Terminal and Install typescript<br/>
 Step 4:  Run npm init to create package.json, just press enter to use default value<br/>
 <img width="741" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/eefee76f-78ae-4090-8daf-e80b59507b1c"><br/>
 Step 5: Run tsc --init to tsconfig.json, and make sure sourceMap is true
-<img width="797" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/6f13a5b6-e561-44a8-a72e-21123096a7e2"><br/>
+<img width="976" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/60602246-edf9-4cfe-a45a-5d03c7b8e267"><br/>
 
