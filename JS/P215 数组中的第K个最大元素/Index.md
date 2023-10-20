@@ -45,7 +45,7 @@ const findKthLargest = function(nums, k) {
 };
 ```
 And even the below code is also OK:
-``js
+```js
 const compare = (a,b) => a - b
 const findKthLargest = function(nums, k) {
     let minHeap = new PriorityQueue({compare});
