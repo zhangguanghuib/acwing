@@ -44,7 +44,7 @@ const findKthLargest = function(nums, k) {
     return minpq.front();
 };
 ```
-
+And even the below code is also OK:
 ``js
 const compare = (a,b) => a - b
 const findKthLargest = function(nums, k) {
