@@ -1,6 +1,6 @@
 <h1>This problem is leveraging the js library   https://github.com/datastructures-js/priority-queue</h1>
 
-This kind code can AC:
+This kind code can AC in the leetcode.cn 
 ```JS
 /**
  * @param {number[]} nums
@@ -43,5 +43,40 @@ const findKthLargest = function(nums, k) {
     
     return minpq.front();
 };
+```
+
+``js
+const compare = (a,b) => a - b
+const findKthLargest = function(nums, k) {
+    let minHeap = new PriorityQueue({compare});
+    nums.forEach(element => {
+        minHeap.enqueue(element);
+        if(minHeap.size() > k){
+            minHeap.dequeue();
+        }
+    });
+
+    return minHeap.front();
+}
+```
+
+But in VS code, when run it but node xxx.js, only the below code is OK:
+```js
+import { PriorityQueue } from "@datastructures-js/priority-queue"
+
+const compare = (a,b) => a - b
+const findKthLargest = function(nums, k) {
+    let minHeap = new PriorityQueue(compare);
+    nums.forEach(element => {
+        minHeap.enqueue(element);
+        if(minHeap.size() > k){
+            minHeap.dequeue();
+        }
+    });
+
+    return minHeap.front();
+}
+
+console.log(findKthLargest([3,2,1,5,6,4], 2));
 ```
 
