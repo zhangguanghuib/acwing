@@ -1,5 +1,29 @@
 <h1>This doc shows how to input output for Typescript in Node environment</h1>
 
+Firstly, please install the Typescipt to support node:
+
+npm i --save-dev @types/node
+
+Case #0:  
+```ts
+import * as readline from 'readline';
+
+// Create an interface for reading data from the console
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// Ask a question and get input from the user
+rl.question('Please enter your name: ', (answer) => {
+  // Output the answer
+  console.log(`Hello, ${answer}!`);
+
+  // Close the interface
+  rl.close();
+});
+```
+
 Case #1. Single line input
  ```js
  const readline = require('readline');
