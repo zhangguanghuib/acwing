@@ -40,21 +40,26 @@ rl.on('line', function (line) {
  ```
 
 Case #2: Multiple lines input,  number of line is certain:
-```js
-const readline = require('readline');
+```ts
+import * as readline from 'readline';
 
+// Create an interface for reading data from the console
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+  input: process.stdin,
+  output: process.stdout
 });
+
 // number of lines to be input:
-let num = 2;
-let inputs =[]; // Array to store all the lines 
-rl.on('line', function (line) {
+let num: Number = 2;
+let inputs : string[] =[]; // Array to store all the lines 
+rl.on('line', function (line:string) {
     inputs.push(line);
     if(inputs.length === num){
+
+        let s: string = inputs[0];
+        let n: number = parseInt(inputs[1]);
         // all lines are input done, start processing them
-        console.log(inputs[0].substr(0,parseInt(inputs[1])))；
+        console.log(inputs[0].substr(0,parseInt(inputs[1])))
         // Clean the array so that it can store next group lines
         inputs = [];
     }
