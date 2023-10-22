@@ -1,7 +1,7 @@
 <h1>This doc shows how to input output for javascript in Node environment</h1>
 
 Case #1. Single line input
- ```
+ ```js
  const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -14,7 +14,7 @@ rl.on('line', function (line) {
  ```
 
 Case #2: Multiple lines input,  number of line is certain:
-```
+```js
 const readline = require('readline');
 
 const rl = readline.createInterface({
