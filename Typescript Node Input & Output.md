@@ -34,7 +34,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.on('line', function (line) {
+rl.on('line', function (line:string) {
     console.log(line)
  });
  ```
