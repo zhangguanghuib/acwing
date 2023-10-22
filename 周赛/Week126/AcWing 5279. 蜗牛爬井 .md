@@ -1,4 +1,4 @@
-https://www.acwing.com/problem/content/5282/
+https://www.acwing.com/problem/content/5282/<br/>
 <img width="657" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/9da575c1-bc9c-450a-88be-dd97251bd277">
 ```js
 const { stdin } = require('process');
