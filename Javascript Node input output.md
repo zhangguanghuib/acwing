@@ -62,7 +62,7 @@ rl.on('line', function (line) {
     }
 });
 ```
-Case #4,  multiple lines input,  line number is uncertail:
+Case #4,  multiple lines input,  line number is uncertain:
 ```js
 const readline = require('readline');
 
