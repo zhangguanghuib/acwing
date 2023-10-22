@@ -25,16 +25,18 @@ rl.question('Please enter your name: ', (answer) => {
 ```
 
 Case #1. Single line input
- ```js
- const readline = require('readline');
+ ```ts
+import * as readline from 'readline';
 
+// Create an interface for reading data from the console
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+  input: process.stdin,
+  output: process.stdout
 });
+
 rl.on('line', function (line) {
     console.log(line)
-});
+ });
  ```
 
 Case #2: Multiple lines input,  number of line is certain:
