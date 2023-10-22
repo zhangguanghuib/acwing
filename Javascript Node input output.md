@@ -35,6 +35,34 @@ rl.on('line', function (line) {
 });
 ```
 
+case #3:  Multiple lines input,  first line is the line number, subsequent lines are real data:
+```js
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+let num = 0;
+let inputs = [];
+rl.on('line', function (line) {
+    if(num === 0){
+        num = parseInt(line)
+    }else{
+        inputs.push(line.toLocaleLowerCase());
+    }
+    if(inputs.length === num){
+        for(let item of inputs){
+           //...
+           //Process all the lines in input array
+            // clean for next group
+            num = 0;
+            inputs = [];
+        }
+    }
+});
+```
+
 
 
 
