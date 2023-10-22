@@ -55,7 +55,6 @@ let inputs : string[] =[]; // Array to store all the lines
 rl.on('line', function (line:string) {
     inputs.push(line);
     if(inputs.length === num){
-
         let s: string = inputs[0];
         let n: number = parseInt(inputs[1]);
         // all lines are input done, start processing them
