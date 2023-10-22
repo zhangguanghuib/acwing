@@ -13,7 +13,7 @@ rl.on('line', function (line) {
 });
  ```
 
-Case #2: multiple line input,  number of line is certain:
+Case #2: Multiple lines input,  number of line is certain:
 ```
 const readline = require('readline');
 
