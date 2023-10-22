@@ -62,6 +62,27 @@ rl.on('line', function (line) {
     }
 });
 ```
+Case #4,  multiple lines input,  line number is uncertail:
+```js
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let inputs = [];
+
+rl.on('line', function (line) {
+        inputs.push(line);
+    }
+);
+// 输入结束时，在 close 中对数据进行处理
+rl.on('close', function () {
+   
+});
+```
+
 
 
 
