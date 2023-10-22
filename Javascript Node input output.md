@@ -1,7 +1,6 @@
 <h1>This doc shows how to input output for javascript in Node environment</h1>
 
-<ol>
- <li>Single line input</li>
+Case #1. Single line input
  ```js
  const readline = require('readline');
 
@@ -13,7 +12,6 @@ rl.on('line', function (line) {
     console.log(line)
 });
  ```
-</ol>
 
 
 
