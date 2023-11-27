@@ -1,25 +1,31 @@
 <h1>This doc shows how to debug TypeScript in Visual Studio Code</h1>
 
 Step 1:  Download and Install NodeJS<br/>
-Step 2:  Create a folder and open this folder by Visual Studio Code<br/>
-Step 3:  Open Terminal and Install typescript<br/>
-<img width="677" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/96819c30-6694-4025-9a0f-f0c04d11461d"><br/>
-Step 4:  Run npm init to create package.json, just press enter to use default value<br/>
-<img width="741" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/eefee76f-78ae-4090-8daf-e80b59507b1c"><br/>
-Step 5: Run tsc --init to tsconfig.json, and make sure sourceMap is true, and also specify an outDir to store the js file.
-<img width="976" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/60602246-edf9-4cfe-a45a-5d03c7b8e267"><br/>
-Step 6. create launch.json<br/>
-```ps
- "preLaunchTask": "tsc: build - tsconfig.json",
-```
-<img width="598" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/6c5423ef-16a6-42fb-ab7e-d955e0a1a678"><br/>
-Step 7. Create src folder, and then create a TS file in it, 
-<img width="845" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/6647e7ea-ae3b-45a9-bd58-d0bef0cd22d5"><br/>
-Step 8:  Click Run->Start debugging. see the breakpoint is already hit:
-<img width="1008" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/53529414-ee4d-4f08-aef7-f8e92b2423bc"><br/>
-Step 9:  You also can cd to the output folder where JS  is in, and then run this command:
-node  *.js file, see the breakpoint is also hit, and the console.log is working as well<br/>
-<img width="994" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/70b88bfe-6c70-46e4-9fa8-392a2b0c5f66">
+Step 2: Create your TS file to debug:
+<img width="414" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/aa0254ad-18fb-4dc9-bd4d-a597da37ec5d">
+Step 3 : Install Typescript debug extension:
+<img width="844" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/c61373b4-5f5f-4e0e-98e5-9c9114885233">
+
+Step 4:  Add config file:
+<img width="300" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/4d606c3c-cb1e-4717-84e7-95703b2cf266">
+<img width="570" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/3be6d128-393c-4b7f-9a8b-f308f766fb1d">
+Finally the config file is like:
+<img width="880" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/3277f4e1-b3e6-4455-a18e-964b0f4bf40d">
+
+Step 5: Install<br/>
+ npm i ts-node typescript <br/>
+
+Please notice here please don't add -g
+<img width="801" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/ae166169-e5fc-43ab-aa0c-39122aad2035">
+
+Step 6:  Click Run->Start debugging, see the breakpoint is hit:<br/>
+<img width="645" alt="image" src="https://github.com/zhangguanghuib/acwing/assets/14832260/35608d9e-d435-4b04-9d14-43772af40dec">
+
+
+
+
+
+
 
 
 
